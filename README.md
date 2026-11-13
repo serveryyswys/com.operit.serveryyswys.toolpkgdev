@@ -24,7 +24,7 @@ ToolpkgDev IDE 是一个为AI在Operit AI中提供开发 Operit 插件的完整�
  - 基于SQLite的虚拟空间，不会与用户的物理空间进行交互
  - 自动文件快照记录，让AI的每一次修改都有路可退
  - 支持使用 [OperitPackageManager](https://github.com/yyswys-yjyj/OperitPackageManager) 来构建你的项目
- - 内置时间线式版本快照管理器，版本管理更加得心应手、
+ - 内置时间线式版本快照管理器，版本管理更加得心应手
  - 重要操作需要用户批准，防止AI的误操作毁了你的项目
 
 ## 安装与使用
