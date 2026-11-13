@@ -3,12 +3,12 @@
 <div align="center">
     <img src="https://visitor.serveryyswys.top/cnt/tdi" alt="ToolpkgDev IDE"></img><br>
     <i>*给 AI 用的一整套完整 Toolpkg IDE。*</i><br>
-    完整的README请移步：<a href="./doc/README.md">/doc/README.md</a>
+    完整的README请移步：<a href="./docs/README.md">/docs/README.md</a>
     <br><br>
     <a href="https://github.com/serveryyswys/com.operit.serveryyswys.toolpkgdev"><img src="https://img.shields.io/badge/GitHub-toolpkgdev-blue?style=for-the-badge&logo=github"></img></a>
     <a href="https://git.repo.archive.serveryyswys.top/yyswys-yjyj/com.operit.serveryyswys.toolpkgdev"><img src="https://img.shields.io/badge/Gitea-toolpkgdev-green?style=for-the-badge&logo=gitea"></img></a>
     <img src="https://img.shields.io/badge/version-1.0.0--RELEASE-blue?style=for-the-badge"></img>
-    <a href="https://github.com/serveryyswys/overmem/LICENSE"><img src="https://img.shields.io/badge/License-GPL--3.0-green?style=for-the-badge"></img></a>
+    <a href="https://github.com/serveryyswys/com.operit.serveryyswys.toolpkgdev/LICENSE"><img src="https://img.shields.io/badge/License-GPL--3.0-green?style=for-the-badge"></img></a>
     <img src="https://img.shields.io/github/stars/serveryyswys/com.operit.serveryyswys.toolpkgdev?style=for-the-badge&logo=github&color=yellow"></img>
 </div>
 <br>

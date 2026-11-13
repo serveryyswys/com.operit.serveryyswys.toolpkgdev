@@ -159,6 +159,19 @@ AI 会编译、校验、打包，然后告诉你产物在哪儿。
 
 ---
 
+## 安装与使用
+## 1. 通过 Operit Market 安装
+在 Operit AI 的插件市场中安装本包后，回到主页，找到侧栏的"ToolpkgDev IDE"入口，点击进入完成配置即可使用。
+
+## 2. 从 下载中心 下载并安装到 Operit
+访问下载站：[https://www.serveryyswys.top/download/](https://www.serveryyswys.top/download/)   
+找到`ToolpkgDev IDE`后下载即可，随后在Operit中安装它
+
+## 3. 从 Github Release 下载并安装到 Operit
+在[https://github.com/serveryyswys/com.operit.serveryyswys.toolpkgdev/releases](https://github.com/serveryyswys/com.operit.serveryyswys.toolpkgdev/releases)中找到你要下载的版本，下载后安装即可  
+
+---
+
 ## 开源
 
 本项目基于 **GPL-3.0-or-later** 开源。
