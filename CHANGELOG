@@ -1,0 +1,40 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2026-11-14
+
+First stable release: a complete Toolpkg IDE for AI use.
+
+### Added
+
+- Virtual filesystem backed by SQLite (storage.db) with read, write, delete, apply_file, grep, sed, list and stat tools, isolated from the user's physical storage
+- Fine-grained auto snapshots on every write operation, with manual prune and configurable retention (default 300 records)
+- Version snapshots: stage, commit, history_nodes, files_at, read_at, diff and rollback, plus pull to export any historical version to a physical directory
+- TypeScript compilation through a hidden executor with virtual filesystem materialization and artifact write-back
+- opm integration: init, search, install, remove, license, changelog, build, verify, pack and version
+- Consent-based guard for irreversible operations (destroy, archive, mass delete, old rollback), which renders a confirmation XML and executes only after the user approves
+- Toolpkg IDE UI: home, environment check, settings, pending confirmations, runtime logs, about and open-source licenses
+- Persistent logger with per-session banners, local timestamps, 2 MB rotation, and an in-app log viewer with session switching and clipboard export
+- Environment self-check for opm availability, tsc availability, writable directories and the node.operit dependency
+
+### Changed
+
+- Project positioning shifted from a generic devtool to a complete Toolpkg IDE for AI use
+- Logs and settings moved to the plugin's own registry directory so they survive host cleanup, while the session lock deliberately stays in cleanOnExit so it resets each session
+- tsc now reports the real exit code and full compiler output on failure instead of reporting success
+
+### Fixed
+
+- findLatestPending no longer returns already-handled records, so the pending banner disappears after approval or rejection
+- hiddenExec failures are now unwrapped from err.data, so exit codes and compiler output are no longer lost
+- Nested scrollable components no longer crash because the session list uses a fixed-height LazyColumn
+- Clipboard writes go through the Java ClipboardManager bridge instead of an unreliable shell broadcast
+
+### Removed
+
+- devtool:confirm_status, a test scaffold that bypassed the confirmation flow
+- The project picker page, replaced by tool-level project listing

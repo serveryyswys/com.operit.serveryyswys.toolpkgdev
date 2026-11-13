@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "toolpkg_id": "com.operit.serveryyswys.toolpkgdev",
+  "version": "1.0.0",
+  "api_version": "1.0.1",
+  "requires": [],
+  "author": ["serveryyswys"],
+  "main": "dist/main.js",
+  "display_name": {
+    "zh": "ToolpkgDev",
+    "en": "ToolpkgDev"
+  },
+  "description": {
+    "zh": "供 AI 使用的 Toolpkg IDE，更安全的 Operit 插件开发工具集，从项目初始化，到代码编写，再到版本管理、构建打包，一站式完成所有开发工作。",
+    "en": "A Toolpkg IDE for AI use, a safer Operit plugin development toolkit that covers everything from project initialization, coding, to version control and build packaging - all in one stop."
+  },
+  "enabled_by_default": true,
+  "subpackages": [
+    {
+      "id": "devtool",
+      "entry": "dist/packages/devtool.js",
+      "enabled_by_default": true,
+      "display_name": {
+        "zh": "devtool 开发工具",
+        "en": "devtool"
+      },
+      "description": {
+        "zh": "init / init_questionnaire / read / write / delete / apply_file / grep / sed / tsc / upload / export / snapshot 系列 / opm 系列。",
+        "en": "init / init_questionnaire / read / write / delete / apply_file / grep / sed / tsc / upload / export / snapshot series / opm series."
+      }
+    }
+  ]
+}

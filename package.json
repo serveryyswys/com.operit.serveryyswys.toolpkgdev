@@ -1,0 +1,16 @@
+{
+  "name": "com.operit.serveryyswys.toolpkgdev",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Safe Operit plugin development environment backed by a SQLite virtual filesystem.",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@serveryyswys/node.operit": "^0.1.10"
+  },
+  "license": "GPL-3.0-or-later"
+}
